@@ -1,6 +1,7 @@
 # Learn-Python-the-Hard-Way
 My notes and maybe some exercises to follow along with the e-book "Learn Python the Hard Way" by Zed Shaw.  Added here for 100 Days of Code.
 
+=======================
 
 @(WWC - Learn Python the Hard Way)
 
@@ -32,7 +33,7 @@ This exercises focuses on showing the relationship between the text editor and t
 :# is called "octothorpe" for some reason
 
 
-###Exercise 3 - Comments and Pound Characters
+###Exercise 2 - Comments and Pound Characters
 
 Comments are important to all programs for:
 * purposes of documenting what we're doing in the program, as explanation and as way-points
@@ -368,5 +369,3 @@ Escape	What it does.
 
 
 Author suggests putting each of these on a flash card to help memorize, but I'm using Anki for this instead.
-
-
