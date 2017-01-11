@@ -371,10 +371,26 @@ Escape	What it does.
 Author suggests putting each of these on a flash card to help memorize, but I'm using Anki for this instead.
 
 
+###Exercise 21 - Functions Can Return Something
+
+Up to now all our functions do is output something - typically "print".  This chapter demonstrates that a called function can pass information back to the calling function (caller).  
+
+###Exercise 22 - What Do You Know So Far?
+
+This chapter is a review and recommends scouring the previous chapters for Python words and symbols to create a list of study objects for future review.
+
+
+###Exercise 23 - Read Some Code
+
+In this chapter, author makes an excellent suggestion to go to Bitbucket or Github and find someone else's Python code and read it.  IMHO the best way to learn to code better is to read other people's code.  Good, bad, or ugly there's always something to learn reading others' work.
+
+
+###Exercise 24 - More Practice
+
+The gyst of this chapter was to gain more muscle memory by typing in the exercise, which was a little long.  There is no new information to learn here except typing.
+
 
 ###Exercise 25 - Even More Practice
-
-The gyst of this chapter was to gain more muscle meory by typing in the exercise, which was a little long.  But I'm a lazy, lazy girl so I'll paste this here:
 
 ex25.py
 ```
