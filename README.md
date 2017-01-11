@@ -369,3 +369,65 @@ Escape	What it does.
 
 
 Author suggests putting each of these on a flash card to help memorize, but I'm using Anki for this instead.
+
+
+
+###Exercise 25 - Even More Practice
+
+The gyst of this chapter was to gain more muscle meory by typing in the exercise, which was a little long.  But I'm a lazy, lazy girl so I'll paste this here:
+
+ex25.py
+```
+def break_words(stuff):
+    """This function will break up words for us."""
+    words = stuff.split(' ')
+    return words
+
+def sort_words(words):
+    """Sorts the words."""
+    return sorted(words)
+
+def print_first_word(words):
+    """Prints the first word after popping it off."""
+    word = words.pop(0)
+    print word
+
+def print_last_word(words):
+    """Prints the last word after popping it off."""
+    word = words.pop(-1)
+    print word
+
+def sort_sentence(sentence):
+    """Takes in a full sentence and returns the sorted words."""
+    words = break_words(sentence)
+    return sort_words(words)
+
+def print_first_and_last(sentence):
+    """Prints the first and last words of the sentence."""
+    words = break_words(sentence)
+    print_first_word(words)
+    print_last_word(words)
+
+def print_first_and_last_sorted(sentence):
+    """Sorts the words then prints the first and last one."""
+    words = sort_sentence(sentence)
+    print_first_word(words)
+    print_last_word(words)
+```
+
+Running this script as "python ex25.py" does nothing, it's not intended to output or print anything.  But do it anyway and look for an absence of errors which would (one hopes) indicate no issues with the way the script is typed into the document.
+
+In this chapter we learn how to run the python shell by typing in "python" and provide it no file names or other arguments.
+
+Once in the shell it's possible to import the script ex25.py by typing "import ex25" and NOTE there is no file extension ".py" on that command.
+
+When imported correctly, the functions defined in the script are available for use in the shell by calling them by name as part of ex25 thusly  `ex25.print_first_and_last`  
+
+The shell will hold variable names so typing `sentence = "All good things come to those who wait"` and then `words = ex25.break_words(sentence)` we then have access to these two variables later in the shell session.
+
+When importing the script this way, it's necessary to preface each function call with `ex25.` as `ex25.sort_words` HOWEVER it's possible to import these and access them without the preface as this  `from ex25 import * ` where the asterisk is a wildcard character and everything in the script is imported into the shell.
+
+I can imagine this is a bad idea if it's necessary to import from two or more scripts and maybe they have same/similar function definitions, then prefacing with the script name is a good idea to keep things separate.
+
+The sample script in this chapter contains some information for the man page.  In the shell type `help(ex25)` and the documenation is provided.  The triple quote sections are "documentation comments".  Makes sense.
+
