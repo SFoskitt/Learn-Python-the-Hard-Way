@@ -373,7 +373,49 @@ Author suggests putting each of these on a flash card to help memorize, but I'm 
 
 ###Exercise 21 - Functions Can Return Something
 
-Up to now all our functions do is output something - typically "print".  This chapter demonstrates that a called function can pass information back to the calling function (caller).  
+Up to now all our functions do is output something - typically "print".  This chapter demonstrates that a called function can pass information back to the calling function (caller).
+
+Anything that can be assigned to a variable (on the right side of a "=") can be returned from a function.  It's a nice rule of thumb.
+
+ex21.py
+```
+def add(a, b):
+    print "ADDING %d + %d" % (a, b)
+    return a + b
+
+def subtract(a, b):
+    print "SUBTRACTING %d - %d" % (a, b)
+    return a - b
+
+def multiply(a, b):
+    print "MULTIPLYING %d * %d" % (a, b)
+    return a * b
+
+def divide(a, b):
+    print "DIVIDING %d / %d" % (a, b)
+    return a / b
+
+
+print "Let's do some math with just functions!"
+
+age = add(30, 5)
+height = subtract(78, 4)
+weight = multiply(90, 2)
+iq = divide(100, 2)
+
+print "Age: %d, Height: %d, Weight: %d, IQ: %d" % (age, height, weight, iq)
+
+
+# A puzzle for the extra credit, type it in anyway.
+print "Here is a puzzle."
+
+what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
+
+print "That becomes: ", what, "Can you do it by hand?"
+```
+
+Crazy nested function in there assigned to variable `what` near the end.  
+
 
 ###Exercise 22 - What Do You Know So Far?
 
