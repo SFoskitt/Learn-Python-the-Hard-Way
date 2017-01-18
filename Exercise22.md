@@ -37,7 +37,7 @@ Math symbols
     `>=` greater-than-equal -- for comparison expressions
     
 
-comma `,` separator used after the print expression to follow it with something else that will be printed
+comma `,` separator used after the `print` expression to follow it with something else that will be printed - use this to `print` the things on the same line - otherwise use a new call to `print` to accomplish on new line
 
 `Traceback` is the start of most errors - this points to the place in the script where an error occurred
 
@@ -90,4 +90,21 @@ _This table is lifted directly from the book and is not my original work_
 | `\xhh`          | Char with hex value         |
 _________________________________________________
 
+
+`raw_input()` pauses the Python script to accept user input, and passes the entered value to any assigned value
+
+wrap the `raw_input()` call as an argument to `int()` to parse the input into integer - this is safer alternative to `input()` method which is insecure because it will attempt to run the input text as Python script
+
+passing a string to `raw_input()` method will use the string as the prompt - this is a shortcut method to use instead of prefixing `raw_input()` with a `print` call
+
+`pydoc` followed by the name of a Python built-in method (for instance `print`) opens the documentation for that method - use `q` to exit from this
+
+`from x import y` is how we get external modules/features for use in the scripts
+
+`argv` is a feature of `sys` module that allows us to accept multiple arguments when running Python scripts, ex:
+`python ex22.py thing1 thing2 thing3`  where inside script ex22.py the arguments will be assigned to variables as:
+`script, var1, var2, var3 = argv` and `script` is the name of the script, ex22.py here, and is a gimme which comes with `argv`
+number of arguments and variables must match
+
+`open()` method creates a file stream object which must be assigned to a variable, and which comes with several methods like `read` such as `txt = open(filename)` then later `print txt.read()` - close the file stream with `close()`
 
