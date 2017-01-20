@@ -108,3 +108,36 @@ number of arguments and variables must match
 
 `open()` method creates a file stream object which must be assigned to a variable, and which comes with several methods like `read` such as `txt = open(filename)` then later `print txt.read()` - close the file stream with `close()`
 
+These are also filestream commands, and I copied/pasted them directly from the book:
+`close()` -- Closes the file. Like File->Save.. in your editor.
+`read()` -- Reads the contents of the file. You can assign the result to a variable.
+`readline()` -- Reads just one line of a text file.
+`truncate()` -- Empties the file. Watch out if you care about the file.
+`write('stuff')` -- Writes "stuff" to the file.
+`seek()` -- Move virtual cursor to some point in the file.
+
+pass the 'w' as a parameter to the `open()` method of filestream to open the file in "write" mode or 'r' for "read" mode or 'a' for "append" mode - default is 'r' "read" mode
+
+`os.path`
+`exists`
+another import to use: `from os.path import exists` which tests whether a file exists or not, ex: `ans = exists(filename)` and will return Boolean type
+
+`echo`
+`cat`
+new Python commands to use at the terminal promopt (not the shell prompt): `echo` and `cat` where `echo` takes a string argument and outputs the text - either straight back to the terminal like a parrot, or piped to a file as `echo "this string" > test.txt` and `cat` takes a file name and outputs the content
+
+`man` provides the documentation to a Python command, ex: `man echo` will open the pydoc for the `echo` command
+
+`len()` returns the length of a string passed to it, ex: `len('answer')` will return 6
+
+`def` used to define a function, ex: `def this_function():` defines the function called "this_function"
+
+the line which starts `def` must end with a colon `:`
+
+function names (like variable names) are not camelCased but snake_case
+
+`*args` is an argument container similar to `argv` but for use in functions, ex: `def some_fun(*args):` but are unpacked as `arg1, arg2 = args` NOT `arg1, arg2 = *args`
+
+many different ways to call a function (Exercise 19)
+
+`return` passes something back to the calling script/method/function - anything that can be assigned with `=` can be passed back woth `return`
