@@ -60,4 +60,4 @@ print "Your third variable is:", third
 
 `import` adds features to the script from outside modules - in the above example, the module is `sys` and imports `argv` which allows us to take arguments from the terminal when starting a Python script, ex: `python ex13.py snacks naps`
 
-the name of the script is _*ALWAYS*_ the first argument packed into `argv` and must always be unpacked in the script
+the name of the script is __*ALWAYS*__ the first argument packed into `argv` and must always be unpacked in the script
